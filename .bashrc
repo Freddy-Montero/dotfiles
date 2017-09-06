@@ -48,7 +48,7 @@ export LESS_TERMCAP_so=$'\e[1;44;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;32m'
 export HISTTIMEFORMAT="%F %T "
-export HISTSIZE=1000
+export HISTSIZE=5000
 export HISTFILESIZE=2000
 export HISTCONTROL=ignoredups
 export HISTIGNORE="&:bg:fg:ll:h"
@@ -107,10 +107,4 @@ alias more='sudo less'
 alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 alias vi='vim'
-# VPN Stuff
-alias home='sudo vpnc Home'
-alias vpnd='sudo vpnc-disconnect'
-# Oath
-alias 2fa='oathtool --totp --digits=6 -s 30s -b ZF7ONACGNQUI2DJ45N6MSQTQHOG3MCT7'
-# Ansible Stuff
 alias ansible-syntax='ansible-playbook --syntax-check'
