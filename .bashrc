@@ -48,7 +48,7 @@ export LESS_TERMCAP_so=$'\e[1;44;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;32m'
 export HISTTIMEFORMAT="%F %T "
-export HISTSIZE=5000
+export HISTSIZE=1000
 export HISTFILESIZE=2000
 export HISTCONTROL=ignoredups
 export HISTIGNORE="&:bg:fg:ll:h"
@@ -107,4 +107,5 @@ alias more='sudo less'
 alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 alias vi='vim'
+# Ansible Stuff
 alias ansible-syntax='ansible-playbook --syntax-check'
